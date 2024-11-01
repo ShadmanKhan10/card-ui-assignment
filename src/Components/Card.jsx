@@ -46,7 +46,6 @@ export default function Card({ searchQuery }) {
     },
   ];
 
-  // Filter the cardDatas array based on an exact match at the start of the name
   const filteredCards = cardDatas.filter((data) =>
     data.name.toLowerCase().startsWith(searchQuery.toLowerCase())
   );
