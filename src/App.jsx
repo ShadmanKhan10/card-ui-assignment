@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import search from "./assets/search-icon.png";
-import pic2 from "./assets/pic2.jpg";
+import pic3 from "./assets/pic3.jpg";
 import dropdown from "./assets/arrow-down.png";
 import "./App.css";
 import Navbar from "./Components/Navbar";
@@ -28,19 +28,13 @@ function App() {
         />
       </div>
       <div className="profile-details-container">
-        <img src={pic2} className="profile-img" alt="profile-pic" />
-        <label className="profile-name">Fakhtar Naveed</label>
+        <img src={pic3} className="profile-img" alt="profile-pic" />
+        <label className="profile-name">Fakhar Naveed</label>
         <img src={dropdown} alt="dropdown" className="dropdown-img" />
       </div>
       <Navbar />
-      <div className="list-card-container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+
+      <Card searchQuery={searchQuery} />
     </>
   );
 }

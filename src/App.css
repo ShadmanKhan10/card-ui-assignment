@@ -16,8 +16,12 @@
   padding-left: 3.2vw;
   box-sizing: border-box;
   font-size: 1.2vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .search-icon-container {
+  /* border: 2px solid black; */
   width: 3.5vw;
   height: 100%;
   position: absolute;
@@ -92,6 +96,9 @@
   border-radius: 3vw;
   cursor: pointer;
 }
+.menu {
+  cursor: pointer;
+}
 .card-container {
   width: 30%;
   height: 17vw;
@@ -126,11 +133,11 @@
   /* border: 2px solid black; */
   margin-top: 2vw;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2vw;
-  width: 83%;
+  width: 70%;
   position: relative;
-  left: 3.8vw;
+  left: 7vw;
   font-size: 1.2vw;
 }
 .email-text {
